@@ -1,45 +1,47 @@
 const events = [
+   
     {
         title: "Opening Keynote: The Future of AI",
         type: "Keynote",
         date: "2025-11-20T09:00:00",
         description: "Join industry visionary Dr. Evelyn Reed as she unveils the next decade of AI innovation.",
-        image: ""
+        image: "WhatsApp Image 2025-11-13 at 21.11.03.jpeg"
     },
     {
         title: "Advanced JavaScript Workshop",
         type: "Workshop",
         date: "2025-11-20T10:30:00",
         description: "A 3-hour, hands-on deep-dive into asynchronous JavaScript, Promises, and modern ES6+ features.",
-        image: ""
+        image: "WhatsApp Image 2025-11-13 at 21.48.58.jpeg"
     },
      {
         title: "Cybersecurity in the Cloud Era",
         type: "TALK",
         date: "2025-11-20T11:00:00",
         description: "Nov 20, 2025, 11:00Am Cybersecurity in the Cloud Era",
-        image: ""
+        image: "WhatsApp Image 2025-11-13 at 21.21.49.jpeg"
     },
     {
         title: "Introduction to Quantum Computing",
         type: "TALK",
         date: "2025-11-20T14:00:00",
         description: " Introys with eachers, soddeson",
-        image: ""
+        image: "WhatsApp Image 2025-11-13 at 21.48.54.jpeg"
     },
      {
         title: "Notworking Mixer & Welcome Reception",
-        type: "TALK",
-        date: "2025-11-20T14:00:00",
-        description: "Introys with eachers, soddeson",
-        image: ""
+        type: "SOCIAL",
+        date: "2025-11-20T17:00:00",
+        description: "Networking miver & welcome reception",
+        image: "WhatsApp Image 2025-11-13 at 22.04.33.jpeg"
     },
     {
         title: "The Ethics of Machine Learning",
         type: "TALK",
         date: "2025-11-21T09:00:00",
-        description: " From cooling to tycur seolls",
-        image: ""
+        description: " From cooling to tyour seolls",
+        image: "WhatsApp Image 2025-11-13 at 22.04.31.jpeg"
+    },
     
     // Add all other events here...
 ];
