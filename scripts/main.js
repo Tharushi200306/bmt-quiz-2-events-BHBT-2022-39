@@ -143,6 +143,20 @@ themeToggle.addEventListener("click", () => {
     localStorage.setItem("theme", isDark ? "dark" : "light");
     themeToggle.textContent = isDark ? "☀️" : "🌙";
 });
+// Add to Google Calendar
+document.addEventListener("click", function(e){
+    if(e.target && e.target.classList.contains("add-calendar")){
+        const card = e.target.closest(".event-card");
+        const title = card.querySelector("h2").innerText;
+        const dateStr = card.querySelector(".countdown").dataset.date;
+        const start = new Date(dateStr).toISOString().replace(/-|:|\.\d+/g,"");
+        const end = new Date(new Date(dateStr).getTime() + 60*60*1000).toISOString().replace(/-|:|\.\d+/g,""); // 1-hour event
+
+        const gcalUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${start}/${end}&details=${encodeURIComponent(title)}&sf=true&output=xml`;
+        window.open(gcalUrl, "_blank");
+    }
+});
+
 
 // Initial display
 document.addEventListener("DOMContentLoaded", () => {
